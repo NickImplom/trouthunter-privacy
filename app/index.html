@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="TroutHunter Fishing App - River Data, Weather, and Tips for Trout and Salmon Anglers">
-  <title>TroutHunter - Your Ultimate Fishing Companion</title>
+  <meta name="description" content="TroutHunter Fishing App - Real-time Michigan River Data, Weather, and Tips for Trout and Salmon Anglers">
+  <title>TroutHunter - Your Ultimate Michigan Fishing Companion</title>
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="TroutHunter_512x512.png">
-  <link rel="shortcut icon" type="image/png" href="TroutHunter_512x512.png">
+  <link rel="icon" type="image/png" href="TroutHunter.png">
+  <link rel="shortcut icon" type="image/png" href="TroutHunter.png">
   
-  <!-- ✅ AVANtik Affiliate Script (HTTPS version) -->
+  <!-- AVANtik Affiliate Script (HTTPS version) -->
   <script type="text/javascript" src="https://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=63e9af3056f0128ecc5f29d2fa064f90797ab830"></script>
   
   <style>
+    :root {
+      --primary-color: #1C6167;
+      --light-primary: #E8F1F1;
+      --text-color: #333;
+    }
+    
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
-      color: #333;
+      color: var(--text-color);
     }
     .container {
       max-width: 800px;
@@ -29,13 +35,13 @@
       background: #fff;
     }
     
-    /* ✅ Logo styling */
+    /* Logo styling */
     .header {
       display: flex;
       align-items: center;
       margin-bottom: 2rem;
       padding-bottom: 1rem;
-      border-bottom: 2px solid #5a442b;
+      border-bottom: 2px solid var(--primary-color);
     }
     
     .logo {
@@ -48,7 +54,7 @@
     
     .title-section h1 {
       margin: 0;
-      color: #5a442b;
+      color: var(--primary-color);
       font-size: 2.5rem;
     }
     
@@ -59,20 +65,20 @@
     }
     
     h2 {
-      color: #5a442b;
+      color: var(--primary-color);
       border-bottom: 2px solid #ddd;
       padding-bottom: 0.5rem;
     }
     
     .features {
-      background: #f9f9f9;
+      background: var(--light-primary);
       padding: 1.5rem;
       border-radius: 8px;
       margin: 1rem 0;
     }
     
-    .coming-soon {
-      background: linear-gradient(135deg, #5a442b, #8b6f4d);
+    .available-now {
+      background: linear-gradient(135deg, #1C6167, #2D8D96);
       color: white;
       padding: 1.5rem;
       border-radius: 8px;
@@ -81,10 +87,10 @@
     }
     
     .contact {
-      background: #e8f5e8;
+      background: var(--light-primary);
       padding: 1rem;
       border-radius: 8px;
-      border-left: 4px solid #5a442b;
+      border-left: 4px solid var(--primary-color);
     }
     
     .footer {
@@ -94,6 +100,29 @@
       text-align: center;
       padding-top: 1rem;
       border-top: 1px solid #ddd;
+    }
+    
+    .app-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 15px;
+    }
+    
+    .app-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: var(--primary-color);
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      border: 2px solid white;
+      transition: all 0.3s ease;
+    }
+    
+    .app-button:hover {
+      background-color: rgba(255,255,255,0.8);
     }
     
     /* Responsive design */
@@ -111,47 +140,65 @@
       .title-section h1 {
         font-size: 2rem;
       }
+      
+      .app-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- ✅ Header section with logo and title -->
+    <!-- Header section with logo and title -->
     <div class="header">
-      <img src="TroutHunter_512x512.png" alt="TroutHunter App Logo" class="logo">
+      <img src="TroutHunter.png" alt="TroutHunter App Logo" class="logo">
       <div class="title-section">
         <h1>TroutHunter</h1>
-        <p>Your Ultimate Fishing Companion</p>
+        <p>Your Ultimate Michigan Fishing Companion</p>
       </div>
     </div>
 
-    <p><strong>TroutHunter</strong> is your all-in-one companion for trout and salmon fishing. Whether you're targeting brown trout in Michigan streams or chasing salmon runs, our app provides the real-time tools you need to succeed.</p>
+    <p><strong>TroutHunter</strong> is your all-in-one companion for trout and salmon fishing in Michigan. Whether you're targeting brown trout in Upper Peninsula streams or chasing steelhead and salmon runs, our app provides the real-time tools you need for a successful day on the water.</p>
 
     <div class="features">
       <h2>🎣 Key Features</h2>
       <ul>
-        <li><strong>Live River Data:</strong> Real-time flow, gage height, and water temperature</li>
-        <li><strong>Weather Intelligence:</strong> Forecasts and rainfall data near your favorite rivers</li>
-        <li><strong>Timing Tools:</strong> Sunrise, sunset, dawn, and dusk information</li>
-        <li><strong>Fishing Log:</strong> Track catches, save spots, and monitor your success</li>
-        <li><strong>Species Guide:</strong> Detailed info on trout, salmon, and rigging setups</li>
+        <li><strong>Live River Data:</strong> Real-time flow, gage height, and water temperature from USGS stations</li>
+        <li><strong>Weather Intelligence:</strong> Current conditions and forecasts for your fishing spots</li>
+        <li><strong>Michigan Rivers:</strong> Comprehensive database of Michigan's best trout and salmon streams</li>
+        <li><strong>Catch Log:</strong> Record your catches with photos, species, and location data</li>
+        <li><strong>Species Guide:</strong> Detailed information on trout and salmon species in Michigan</li>
+        <li><strong>Rigging Setups:</strong> Popular rigging setups for different species and conditions</li>
+        <li><strong>Fishing Spots:</strong> Save and organize your favorite fishing locations</li>
+        <li><strong>Offline Access:</strong> View saved rivers and data when cellular service is unavailable</li>
+        <li><strong>River Conditions:</strong> Color-coded indicators showing optimal fishing conditions</li>
       </ul>
     </div>
 
-    <div class="coming-soon">
-      <h2>📱 Coming Soon</h2>
-      <p>Launching on <strong>Android</strong> and <strong>iOS</strong> soon!</p>
-      <p>Stay tuned for the best river-focused fishing app designed by anglers, for anglers.</p>
+    <div class="available-now">
+      <h2>📱 Now Available!</h2>
+      <p>TroutHunter is now available on <strong>Android</strong>, with <strong>iOS</strong> coming soon!</p>
+      <p>The ultimate Michigan fishing app designed by anglers, for anglers.</p>
+      
+      <div class="app-buttons">
+        <a href="https://play.google.com/store/apps/details?id=com.trouthunter.app" class="app-button">
+          Get it on Google Play
+        </a>
+        <a href="#" class="app-button" style="opacity: 0.7;">
+          iOS Coming Soon
+        </a>
+      </div>
     </div>
 
     <div class="contact">
       <h2>📧 Get in Touch</h2>
-      <p>Questions or feedback? Contact us: <a href="mailto:trouthunterusa@gmail.com">trouthunterusa@gmail.com</a></p>
+      <p>Questions, feedback, or feature requests? Contact us: <a href="mailto:trouthunterusa@gmail.com">trouthunterusa@gmail.com</a></p>
     </div>
 
     <div class="footer">
       <p><em>🎯 This site may contain affiliate links. If you click and purchase, I may receive a small commission at no extra cost to you.</em></p>
-      <p>© 2024 TroutHunter App. Built for Michigan anglers and beyond.</p>
+      <p>© 2024 TroutHunter App. Built for Michigan anglers by Michigan anglers.</p>
     </div>
   </div>
 </body>
